@@ -1,5 +1,7 @@
 # uni-event-lint
 
+[![npm](https://img.shields.io/npm/v/uni-event-lint.svg)](https://www.npmjs.com/package/uni-event-lint) [![license](https://img.shields.io/npm/l/uni-event-lint.svg)](LICENSE) [![node](https://img.shields.io/node/v/uni-event-lint.svg)](package.json)
+
 **找出 uni-app 里「从事件的 `target` 取 `value`」这类写法** —— 页面不报错、TypeScript 不报错、**单元测试也照样绿**的那一类 bug。
 
 ```bash
