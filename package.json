@@ -2,6 +2,26 @@
   "name": "uni-event-lint",
   "version": "0.1.0",
   "description": "找出 uni-app 里「从事件的 target 取 value」这类静默失效的写法 —— 页面不报错、单测也照样绿的那一类 bug",
+  "keywords": [
+    "uni-app",
+    "uniapp",
+    "vue",
+    "lint",
+    "miniprogram",
+    "小程序",
+    "detail.value",
+    "target.value"
+  ],
+  "homepage": "https://github.com/vic998499-wq/uni-event-lint#readme",
+  "bugs": {
+    "url": "https://github.com/vic998499-wq/uni-event-lint/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vic998499-wq/uni-event-lint.git"
+  },
+  "license": "MIT",
+  "author": "vic998499-wq (https://github.com/vic998499-wq)",
   "type": "module",
   "bin": {
     "uni-event-lint": "bin/cli.js"
@@ -18,19 +38,9 @@
   ],
   "scripts": {
     "test": "node --test test/scan.test.js",
-    "selfcheck": "node bin/cli.js test/fixtures/ok --exit-zero"
+    "selfcheck": "node bin/cli.js test/fixtures/ok --exit-zero",
+    "prepublishOnly": "npm test"
   },
-  "keywords": [
-    "uni-app",
-    "uniapp",
-    "vue",
-    "lint",
-    "miniprogram",
-    "小程序",
-    "detail.value",
-    "target.value"
-  ],
-  "license": "MIT",
   "engines": {
     "node": ">=18"
   },
